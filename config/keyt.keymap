@@ -7,10 +7,10 @@
 
         default_layer {
             bindings = <
-    &kp &bootloader    &kp Q    &kp W    &kp E     &kp R     &kp T
-    &kp &bootloader    &kp A    &kp S    &kp D     &kp F     &kp G
-    &kp &bootloader    &kp Z    &kp X    &kp C     &kp V     &kp B
-    &kp &bootloader    &kp 1    &kp 2    &kp 3     &kp 4     &kp 5
+    &bootloader    &kp Q    &kp W    &kp E     &kp R     &kp T
+    &bootloader    &kp A    &kp S    &kp D     &kp F     &kp G
+    &bootloader    &kp Z    &kp X    &kp C     &kp V     &kp B
+    &bootloader    &kp 1    &kp 2    &kp 3     &kp 4     &kp 5
             >;
         };
     };
