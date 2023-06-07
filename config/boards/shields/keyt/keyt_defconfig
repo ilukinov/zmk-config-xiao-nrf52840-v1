@@ -1,0 +1,2 @@
+# use P0.09 and P0.10 as GPIOs
+CONFIG_NFCT_PINS_AS_GPIOS=y
