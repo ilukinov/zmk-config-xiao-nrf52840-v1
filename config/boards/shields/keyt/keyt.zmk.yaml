@@ -1,0 +1,8 @@
+file_format: "1"
+id: keyt
+name: keyt
+type: shield
+url: https://github.com/ilukinov/keyt
+requires: [seeed_xiao]
+features:
+  - keys
