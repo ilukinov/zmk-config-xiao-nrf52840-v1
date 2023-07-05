@@ -12,6 +12,9 @@
 #define WHRML(k2,k3,k4) &ht LALT k2  &ht LGUI k3  &ht LCTRL k4
 #define WHRMR(k1,k2,k3) &ht RCTRL k1  &ht RGUI k2  &ht RALT k3
 
+// Shift Del macro
+#define SHDEL(k1) &ht LSHIFT k1
+
 #define MAC 0
 #define WIN 1
 #define RIG 2
@@ -48,13 +51,14 @@
         //│  Q       │  W       │  E       │  R       │  T       │                 │  Y       │  U       │  I       │  O       │  P       │
             &kp Q      &kp W      &kp E      &kp R      &kp T                        &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤                 ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │                 │  H       │  J       │  K       │  L       │BACKSPACE │
-            &kp A     HRML(S,         D,         F)     &kp G                        &kp H      HRMR(J,        K,           L)   &kp BSPC
+        //│  A       │  S       │  D       │  F       │  G       │                 │  H       │  J       │  K       │  L       │   ;      │
+            &kp A     HRML(S,         D,         F)     &kp G                        &kp H      HRMR(J,        K,           L)   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤                 ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │                 │  N       │  M       │ , <      │ . >      │ ENTER    │
-            &kp Z      &kp X      &kp C      &kp V      &kp B                       &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
+        //│  Z       │  X       │  C       │  V       │  B       │                 │  N       │  M       │ , <      │ . >      │ TAB      │
+            &kp Z      &kp X      &kp C      &kp V      &kp B                        &kp N       &kp M      &kp COMMA  &kp DOT    &kp TAB
         //╰──────────┴──────────┴──────────┼──────────┼──────────┼────────────┤    ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt LEF TAB  &kp LSHIFT &bootloader      &kp SPACE  &lt RIG TAB
+                                            BACKSPACE 
+                                           &lt LEF BSPC SHDEL(DEL) &kb LGUI          &kp ENTER   &lt RIG SPACE
         //                                 ╰──────────┴──────────┴────────────╯    ╰──────────┴──────────╯
             >;
         };
@@ -65,13 +69,13 @@
         //│  Q       │  W       │  E       │  R       │  T       │                 │  Y       │  U       │  I       │  O       │  P       │
             &kp Q      &kp W      &kp E      &kp R      &kp T                        &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤                 ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  S       │  D       │  F       │  G       │                 │  H       │  J       │  K       │  L       │BACKSPACE │
-            &kp A    WHRML(S,         D,         F)     &kp G                        &kp H      WHRMR(J,        K,         L)   &kp BSPC
+        //│  A       │  S       │  D       │  F       │  G       │                 │  H       │  J       │  K       │  L       │   ;      │
+            &kp A    WHRML(S,         D,         F)     &kp G                        &kp H      WHRMR(J,        K,         L)   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤                 ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  V       │  B       │                 │  N       │  M       │ , <      │ . >      │ ENTER    │
-            &kp Z      &kp X      &kp C      &kp V      &kp B                       &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
+        //│  Z       │  X       │  C       │  V       │  B       │                 │  N       │  M       │ , <      │ . >      │ TAB      │
+            &kp Z      &kp X      &kp C      &kp V      &kp B                        &kp N      &kp M      &kp COMMA  &kp DOT    &kp TAB
         //╰──────────┴──────────┴──────────┼──────────┼──────────┼────────────┤    ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt LEF TAB  &kp LSHIFT &bootloader      &kp SPACE  &lt RIG TAB
+                                           &lt LEF BSPC SHDEL(DEL)  &kb LCTRL        &kp ENTER  &lt RIG SPACE
         //                                 ╰──────────┴──────────┴────────────╯    ╰──────────┴──────────╯
             >;
         };
@@ -82,11 +86,11 @@
         //│ 1        │  2       │  3       │  4       │  5       │                 │ 6        │ 7        │ 8        │ 9        │   0      │
             &kp N1    &kp N2     &kp N3     &kp N4     &kp N5                        &kp N6     &kp N7     &kp N8     &kp N9      &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤                 ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │ CapsLock │ PrintSc  │  INSERT  │          |                 |          │ LEFT     │ DOWN     │ UP       │ RIGHT    │
-            &kp DEL   &kp CAPS   &kp PSCRN  &kp INS     &trans                        &trans    &kp LARW   &kp DARW   &kp UARW   &kp RARW 
+        //│ DELETE   │ CapsLock │ PrintSc  │  INSERT  │          |                 | LEFT     │ DOWN     │ UP       │ RIGHT    │          │
+            &kp DEL   &kp CAPS   &kp PSCRN  &kp INS     &trans                       &kp LARW   &kp DARW   &kp UARW   &kp RARW   &trans   
         //├──────────┼──────────┼──────────┼──────────┼──────────┤                 ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │                 │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
-            &trans    &trans     &trans     &trans      &trans                       &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END 
+        //│          │          │          │          │          │                 │ HOME     │ PAGE DN  │ PAGE UP  │ END      │          │
+            &trans    &trans     &trans     &trans      &trans                       &kp HOME   &kp PG_DN  &kp PG_UP  &kp END   &trans    
         //╰──────────┴──────────┴──────────┼──────────┼──────────┼────────────┤    ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC    &bootloader       &trans     &trans
         //                                 ╰──────────┴──────────┴────────────╯    ╰──────────┴──────────╯
@@ -122,8 +126,8 @@
         //│  F9      │  F10     │  F11     │  F12      │  CLEAR BT  │              │ PROFILE 4  │ DEC BRIGHT │          |  VOL DOWN │ PREVSONG │
             &kp F9     &kp F10    &kp F11    &kp F12     &bt BT_CLR                 &bt BT_SEL 4  &kp C_BRI_DEC  &trans   &kp C_VOL_DN &kp C_PREV
         //╰──────────┴──────────┴──────────┼───────────┼────────────┼────────────┤ ├────────────┼────────────┼──────────┴───────────┴──────────╯
-                                            &trans     &trans         &bootloader   &trans     &trans
-        //                                 ╰───────────┴────────────┴────────────╯ ╰──────────┴────────────╯
+                                            &trans       &trans       &bootloader   &trans        &trans
+        //                                 ╰───────────┴────────────┴────────────╯ ╰────────────┴────────────╯
             >;
         };
     };
