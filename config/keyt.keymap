@@ -12,6 +12,8 @@
 #define WHRML(k2,k3,k4) &ht LALT k2  &ht LGUI k3  &ht LCTRL k4
 #define WHRMR(k1,k2,k3) &ht RCTRL k1  &ht RGUI k2  &ht RALT k3
 
+#define SHDEL(k1) &ht LSHIFT k1
+
 
 #define MAC 0
 #define WIN 1
@@ -55,8 +57,8 @@
         //│  Z       │  X       │  C       │  V       │  B       │                 │  N       │  M       │ , <      │ . >      │ TAB      │
             &kp Z      &kp X      &kp C      &kp V      &kp B                        &kp N       &kp M      &kp COMMA  &kp DOT    &kp TAB
         //╰──────────┴──────────┴──────────┼──────────┼──────────┼────────────┤    ├──────────┼──────────┼──────────┴──────────┴──────────╯
-        //                                   BACKSPACE 
-                                           &lt LEF BSPC &kp LSHIFT  &kp LGUI          &kp ENTER  &lt RIG SPACE
+        //                                 | BACKSPACE|          |            |    |          |          | 
+                                           &lt LEF BSPC SHDEL(DEL)  &kp LGUI          &kp ENTER  &lt RIG SPACE
         //                                 ╰──────────┴──────────┴────────────╯    ╰──────────┴──────────╯
             >;
         };
@@ -73,7 +75,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │                 │  N       │  M       │ , <      │ . >      │ TAB      │
             &kp Z      &kp X      &kp C      &kp V      &kp B                        &kp N      &kp M      &kp COMMA  &kp DOT    &kp TAB
         //╰──────────┴──────────┴──────────┼──────────┼──────────┼────────────┤    ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt LEF BSPC &kp LSHIFT  &kp LCTRL        &kp ENTER  &lt RIG SPACE
+                                           &lt LEF BSPC SHDEL(DEL)  &kp LCTRL        &kp ENTER  &lt RIG SPACE
         //                                 ╰──────────┴──────────┴────────────╯    ╰──────────┴──────────╯
             >;
         };
