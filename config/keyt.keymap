@@ -58,7 +58,7 @@
             &kp Z      &kp X      &kp C      &kp V      &kp B                        &kp N       &kp M      &kp COMMA  &kp DOT    &kp TAB
         //╰──────────┴──────────┴──────────┼──────────┼──────────┼────────────┤    ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             BACKSPACE 
-                                           &lt LEF BSPC SHDEL(DEL) &kb LGUI          &kp ENTER   &lt RIG SPACE
+                                           &lt LEF BSPC SHDEL(DEL) &kp LGUI          &kp ENTER   &lt RIG SPACE
         //                                 ╰──────────┴──────────┴────────────╯    ╰──────────┴──────────╯
             >;
         };
@@ -75,7 +75,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │                 │  N       │  M       │ , <      │ . >      │ TAB      │
             &kp Z      &kp X      &kp C      &kp V      &kp B                        &kp N      &kp M      &kp COMMA  &kp DOT    &kp TAB
         //╰──────────┴──────────┴──────────┼──────────┼──────────┼────────────┤    ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt LEF BSPC SHDEL(DEL)  &kb LCTRL        &kp ENTER  &lt RIG SPACE
+                                           &lt LEF BSPC SHDEL(DEL)  &kp LCTRL        &kp ENTER  &lt RIG SPACE
         //                                 ╰──────────┴──────────┴────────────╯    ╰──────────┴──────────╯
             >;
         };
