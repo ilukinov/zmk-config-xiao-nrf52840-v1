@@ -55,7 +55,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │                 │  N       │  M       │ , <      │ . >      │ TAB      │
             &kp Z      &kp X      &kp C      &kp V      &kp B                        &kp N       &kp M      &kp COMMA  &kp DOT    &kp TAB
         //╰──────────┴──────────┴──────────┼──────────┼──────────┼────────────┤    ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            BACKSPACE 
+        //                                   BACKSPACE 
                                            &lt LEF BSPC &kp LSHIFT  &kp LGUI          &kp ENTER  &lt RIG SPACE
         //                                 ╰──────────┴──────────┴────────────╯    ╰──────────┴──────────╯
             >;
