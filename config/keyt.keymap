@@ -92,7 +92,7 @@
         //│          │          │          │          │          │                 │ HOME     │ PAGE DN  │ PAGE UP  │ END      │          │
             &trans    &trans     &trans     &trans      &trans                       &kp HOME   &kp PG_DN  &kp PG_UP  &kp END   &trans    
         //╰──────────┴──────────┴──────────┼──────────┼──────────┼────────────┤    ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC    &bootloader       &trans     &trans
+                                             &trans     &kp ESC    &trans           &trans     &trans
         //                                 ╰──────────┴──────────┴────────────╯    ╰──────────┴──────────╯
             >;
         };
@@ -109,7 +109,7 @@
         //│  '       │  ]       │  }       │  )       │          │                 │    \     │  _       │  +       │  │       │   ?      │
             &kp SQT     &kp RBKT   &kp RBRC   &kp RPAR   &kp LT                       &kp BSLH   &kp UNDER  &kp PLUS   &kp PIPE  &kp QMARK
         //╰──────────┴──────────┴──────────┼──────────┼──────────┼────────────┤    ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans     &bootloader       &trans     &trans
+                                             &trans     &trans     &trans           &trans     &trans
         //                                 ╰──────────┴──────────┴────────────╯    ╰──────────┴──────────╯
             >;
         };
