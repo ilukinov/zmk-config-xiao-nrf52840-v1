@@ -38,10 +38,30 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_1 {
             timeout-ms = <50>;
-            key-positions = <1 11>;
-            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+            bindings = <&kp N1>;
+        };
+        combo_2 {
+            timeout-ms = <50>;
+            key-positions = <1 12>;
+            bindings = <&kp N2>;
+        };
+        combo_3 {
+            timeout-ms = <50>;
+            key-positions = <2 13>;
+            bindings = <&kp N3>;
+        };
+        combo_4 {
+            timeout-ms = <50>;
+            key-positions = <3 14>;
+            bindings = <&kp N4>;
+        };
+        combo_5 {
+            timeout-ms = <50>;
+            key-positions = <4 13>;
+            bindings = <&kp N5>;
         };
     };
 
